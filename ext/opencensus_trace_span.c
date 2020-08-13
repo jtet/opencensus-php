@@ -112,7 +112,7 @@ ZEND_END_ARG_INFO();
  */
 static PHP_METHOD(OpenCensusTraceSpan, __construct) {
     zval *zval_span_options, *v;
-    ulong idx;
+    zend_ulong idx;
     zend_string *k;
 
     if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "a", &zval_span_options) == FAILURE) {
